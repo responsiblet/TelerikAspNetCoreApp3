@@ -1,0 +1,7 @@
+﻿@model TelerikAspNetCoreApp3.Models.ProductViewModel
+
+@(Html.Kendo().DropDownListFor(m => m.ProductID)
+    .DataValueField("ProductID")
+    .DataTextField("ProductName")
+    .BindTo((System.Collections.IEnumerable)ViewData["products"])
+)
