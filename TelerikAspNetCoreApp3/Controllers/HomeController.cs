@@ -27,6 +27,7 @@ namespace TelerikAspNetCoreApp3.Controllers
             {
                 ProductID = i,
                 ProductName = "ProductName" + i
+                //use services channel proxy here
             });
 
             return Json(products, JsonRequestBehavior.AllowGet);
